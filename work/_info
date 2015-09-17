@@ -7,27 +7,27 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dD:/Modelsim/Lab2
+dC:/altera/15.0/lab2
 Ealu_1
 Z0 w1180637634
 Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z5 dD:/Modelsim/Lab3
-Z6 8D:/Modelsim/Lab3/alu_1.vhd
-Z7 FD:/Modelsim/Lab3/alu_1.vhd
+Z5 dC:/altera/15.0/lab3
+Z6 8C:/altera/15.0/lab3/alu_1.vhd
+Z7 FC:/altera/15.0/lab3/alu_1.vhd
 l0
 L17
 VIQJmia`I9W^ZnT5a:0g422
 !s100 NnM:7ibS<]CBUz39lndk91
 Z8 OV;C;10.3d;59
 32
-Z9 !s110 1442518283
+Z9 !s110 1442513095
 !i10b 1
-Z10 !s108 1442518283.780000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Modelsim/Lab3/alu_1.vhd|
-Z12 !s107 D:/Modelsim/Lab3/alu_1.vhd|
+Z10 !s108 1442513095.588000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/altera/15.0/lab3/alu_1.vhd|
+Z12 !s107 C:/altera/15.0/lab3/alu_1.vhd|
 !i113 1
 Z13 o-work work -2002 -explicit
 Z14 tExplicit 1
@@ -52,60 +52,183 @@ R12
 R13
 R14
 Ealu_32
-w1222897322
+Z15 w1442513319
 R1
 R2
 R3
 R4
 R5
-8D:/Modelsim/Lab3/alu_32.vhd
-FD:/Modelsim/Lab3/alu_32.vhd
+Z16 8C:\altera\15.0\lab3\alu_32.vhd
+Z17 FC:\altera\15.0\lab3\alu_32.vhd
 l0
 L17
 V>RofnMFTal9k20W20:U>>0
 !s100 _fT>S0bJ1eY[=`DoZmj5z1
 R8
 32
-Z15 !s110 1442518284
+Z18 !s110 1442513321
 !i10b 1
-!s108 1442518284.350000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Modelsim/Lab3/alu_32.vhd|
-!s107 D:/Modelsim/Lab3/alu_32.vhd|
+Z19 !s108 1442513321.772000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\altera\15.0\lab3\alu_32.vhd|
+Z21 !s107 C:\altera\15.0\lab3\alu_32.vhd|
+!i113 1
+R13
+R14
+Aalu_32_archi
+R1
+R2
+R3
+R4
+DEx4 work 6 alu_32 0 22 >RofnMFTal9k20W20:U>>0
+l39
+L27
+V>YZdAK;:`1V5>VARR;YaP3
+!s100 ::]n8UPiH=`bnz`?BS48?1
+R8
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+R14
+Emux2_1
+Z22 w1442514496
+R1
+R2
+R3
+R4
+R5
+Z23 8mux2_1.vhd
+Z24 Fmux2_1.vhd
+l0
+L10
+VnB:^cJ@b2_H_jLfIJ9H5O3
+!s100 KVhZ2zaG?V2OUgA1WoGX21
+R8
+32
+Z25 !s110 1442514661
+!i10b 1
+Z26 !s108 1442514661.349000
+Z27 !s90 -reportprogress|300|mux2_1.vhd|
+Z28 !s107 mux2_1.vhd|
+!i113 1
+R14
+Amux2_1_archi
+R1
+R2
+R3
+R4
+DEx4 work 6 mux2_1 0 22 nB:^cJ@b2_H_jLfIJ9H5O3
+l18
+L15
+VCn9:4o4VRH99YoRZmW3VA1
+!s100 C9EGaBM`C@@5YUOEj]LUC2
+R8
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R14
+Emux4_1
+Z29 w1442518389
+R2
+R3
+R4
+R5
+Z30 8mux4_1.vhd
+Z31 Fmux4_1.vhd
+l0
+L3
+V0cIhj`?1V;YNm_21f`I1c3
+!s100 Sj22IBfjMfKi`FXjm]@6B0
+R8
+32
+Z32 !s110 1442518812
+!i10b 1
+Z33 !s108 1442518812.683000
+Z34 !s90 -reportprogress|300|mux4_1.vhd|
+Z35 !s107 mux4_1.vhd|
+!i113 1
+R14
+Amux4_1_archi
+R2
+R3
+R4
+Z36 DEx4 work 6 mux4_1 0 22 0cIhj`?1V;YNm_21f`I1c3
+l22
+L13
+Z37 Vb91f2OgP1e2Y;cZc]9C;92
+Z38 !s100 Y8X7XhB;ISW2BKeR<J[YJ3
+R8
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R14
+Pmypackage
+R1
+R2
+R3
+R4
+w1442513155
+R5
+8C:\altera\15.0\lab3\mypackage.vhd
+FC:\altera\15.0\lab3\mypackage.vhd
+l0
+L15
+V;o0JJ8ZR8HDCmUBB7fe9_3
+!s100 9NHfV`IiHQRb]iKc90K?m2
+R8
+32
+!s110 1442513158
+!i10b 1
+!s108 1442513158.573000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\altera\15.0\lab3\mypackage.vhd|
+!s107 C:\altera\15.0\lab3\mypackage.vhd|
 !i113 1
 R13
 R14
 Etb_alu
 w1222897402
-Z16 DPx4 work 8 txt_util 0 22 e6>c50^3aXUSA^a3Z2`O63
+Z39 DPx4 work 8 txt_util 0 22 e6>c50^3aXUSA^a3Z2`O63
 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R1
 R2
 R3
 R4
 R5
-8D:/Modelsim/Lab3/tb_alu.vhd
-FD:/Modelsim/Lab3/tb_alu.vhd
+8C:/altera/15.0/lab3/tb_alu.vhd
+FC:/altera/15.0/lab3/tb_alu.vhd
 l0
 L24
 VS<h9XCk7gQl_58Pja:=HL2
 !s100 l<MzLVD:W7VbU2_MT_fSO3
 R8
 32
-R15
+!s110 1442513343
 !i10b 1
-!s108 1442518284.518000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Modelsim/Lab3/tb_alu.vhd|
-!s107 D:/Modelsim/Lab3/tb_alu.vhd|
+!s108 1442513343.854000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/altera/15.0/lab3/tb_alu.vhd|
+!s107 C:/altera/15.0/lab3/tb_alu.vhd|
 !i113 1
 R13
 R14
 Ptxt_util
 R3
 R4
-Z17 w1168548886
+Z40 w1168548886
 R5
-Z18 8D:/Modelsim/Lab3/txt_util.vhd
-Z19 FD:/Modelsim/Lab3/txt_util.vhd
+Z41 8C:/altera/15.0/lab3/txt_util.vhd
+Z42 FC:/altera/15.0/lab3/txt_util.vhd
 l0
 L6
 Ve6>c50^3aXUSA^a3Z2`O63
@@ -113,16 +236,16 @@ Ve6>c50^3aXUSA^a3Z2`O63
 R8
 32
 b1
-R9
+Z43 !s110 1442513096
 !i10b 1
-Z20 !s108 1442518283.679000
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Modelsim/Lab3/txt_util.vhd|
-Z22 !s107 D:/Modelsim/Lab3/txt_util.vhd|
+Z44 !s108 1442513096.488000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/altera/15.0/lab3/txt_util.vhd|
+Z46 !s107 C:/altera/15.0/lab3/txt_util.vhd|
 !i113 1
 R13
 R14
 Bbody
-R16
+R39
 R3
 R4
 l0
@@ -131,11 +254,11 @@ Vi0U0?mJm98KK^9ac@>7f;2
 !s100 oVaSI3P5FT]lhMfcSRJL43
 R8
 32
-R9
+R43
 !i10b 1
-R20
-R21
-R22
+R44
+R45
+R46
 !i113 1
 R13
 R14
