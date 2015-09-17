@@ -47,6 +47,6 @@ PORT (
   c_out: out std_logic;
   Result:out std_logic_vector (ALU_SIZE downto 0);
   zero: out std_logic
-); END alu_32 ;
+); END component ;
 
 end mypackage;
