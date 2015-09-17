@@ -28,19 +28,27 @@ ARCHITECTURE alu_32_archi OF alu_32 IS
 
 --declarer les signaux ici. Entre autres a_invert, b_negate, operation, ...
 signal a_invert,b_negate : std_logic;
-signal operation : std_logic_vector(1 downto 0);
+signal s_set 	         : std_logic;
+signal s_Cout_Cin,s_less : std_logic_vector(ALU_SIZE downto 0);
+signal operation 	 : std_logic_vector(1 downto 0);
+
+
 COMPONENT alu_1 
 PORT (
-   a, b, c_in, less : IN STD_LOGIC;
-   ALUControl : IN STD_LOGIC_VECTOR (3 downto 0);
+   a, b, c_in, less  : IN  STD_LOGIC;
+   ALUControl        : IN  STD_LOGIC_VECTOR (3 downto 0);
    c_out, result, set: OUT STD_LOGIC
 ); END COMPONENT;
 
 BEGIN
 
-a_invert <= ALUControl (3);
-b_negate <= ALUControl (2);
+a_invert   <= ALUControl (3);
+b_negate   <= ALUControl (2);
 operation  <= ALUControl (1 downto 0);
+
+alu_32_generic : FOR i IN 0 TO ALU_SIZE GENERATE
+alu_1_x : alu_1 PORT MAP (SrcA(i),SrcB(i),ALUControl,s_Cout_Cin(i);
+END GENERATE alu_32_generic;
 
 --completer alu_32
 

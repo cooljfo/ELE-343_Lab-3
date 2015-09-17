@@ -17,10 +17,11 @@ ARCHITECTURE mux2_1_archi OF mux2_1 IS
 
 BEGIN
   process(sel)
+  begin
     if (sel = '0') then
-	q<= i0;
-    else 
-	q<=i1;
+	 q<= i0;
+    elsif (sel ='1')then 
+	 q<=i1;
     end if;
   end process;
 

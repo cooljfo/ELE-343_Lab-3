@@ -13,17 +13,7 @@ PORT ( i0, i1, sel : IN std_logic;
 END mux2_1;
 
 ARCHITECTURE mux2_1_archi OF mux2_1 IS
-
-
 BEGIN
-  process(sel)
-  begin
-    if (sel = '0') then
-	q<= i0;
-    else 
-	q<=i1;
-    end if;
-  end process;
-
+q<= i1 when(sel ='1') else i0;
 
 END mux2_1_archi;

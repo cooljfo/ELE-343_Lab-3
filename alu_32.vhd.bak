@@ -27,7 +27,8 @@ PORT (
 ARCHITECTURE alu_32_archi OF alu_32 IS
 
 --declarer les signaux ici. Entre autres a_invert, b_negate, operation, ...
-
+signal a_invert,b_negate : std_logic;
+signal operation : std_logic_vector(1 downto 0);
 COMPONENT alu_1 
 PORT (
    a, b, c_in, less : IN STD_LOGIC;

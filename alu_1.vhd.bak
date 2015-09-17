@@ -21,6 +21,7 @@ ENTITY alu_1 IS PORT (
 ); END alu_1;
 
 ARCHITECTURE alu_1_archi OF alu_1 IS
+
 COMPONENT full_adder 
 PORT (
    a, b, c_in: IN STD_LOGIC;
@@ -39,26 +40,10 @@ PORT ( i0, i1, sel : IN std_logic;
     q : OUT std_logic);
 end COMPONENT;
 
-signal s_a,s_b : std_logic;
-signal a_invert,b_invert : std_logic;
-signal s_result_and,s_result_or,s_result_add : std_logic;
-
+--declarer les signaux ici 
 
 BEGIN
-U1 : mux2_1
-PORT MAP (a,a_invert,ALUControl(3),s_a);
-U2 : mux2_1
-PORT MAP (b,b_invert,ALUControl(2),s_b);
-U3 : mux4_1
-PORT MAP (s_result_and,s_result_or,s_result_add,less,ALUControl(1 downto 0),result);
-U4 : full_adder
-PORT MAP (s_a,s_b,c_in,s_result_add,c_out);
 
-set	     <= s_result_add;
-
-a_invert     <= not a;
-b_invert     <= not b;
-s_result_and <= s_a and s_b;
-s_result_or  <= s_a or  s_b;
+--completer alu_1
 
 END alu_1_archi;
