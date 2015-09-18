@@ -1,29 +1,18 @@
-vcom mux4_1.vhd
-vsim mux4_1
+vcom alu_32.vhd
+vsim alu_32
+
 add wave *
-force sel "11"
-force i0 1
-force i1 0
-force i2 0
-force i3 1
+force SrcA X"1010"
+force SrcB X"1111"
+force ALUControl "0000"
 run 40ns
-force sel "10"
-force i0 1
-force i1 0
-force i2 0
-force i3 1
-run 40ns 
-force sel "01"
-force i0 1
-force i1 0
-force i2 0
-force i3 1
+force ALUControl "0001"
 run 40ns
-force sel "00"
-force i0 1
-force i1 0
-force i2 0
-force i3 1
+force ALUControl "0010"
+run 40ns
+force ALUControl "0110"
+run 40ns
+force ALUControl "0111"
 run 40ns
 
 

@@ -22,13 +22,12 @@ END COMPONENT;
 signal s_mux : std_logic_vector(SIGNAL_SIZE downto 0);
 
 BEGIN
-
 U1 : mux2_1
-port map(i0 =>i0,i1=>i1,sel=>sel(0),q=>s_mux(0));
+port map(i0,i1,sel(0),s_mux(0));
 U2 : mux2_1
-port map(i0 =>i2,i1=>i3,sel=>sel(0),q=>s_mux(1));
+port map(i2,i3,sel(0),s_mux(1));
 U3 : mux2_1
-port map(i0 =>s_mux(0),i1=>s_mux(1),sel=>sel(1),q=>q);
+port map(s_mux(0),s_mux(1),sel(1),q);
 
 
 END mux4_1_archi;

@@ -17,15 +17,6 @@ Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling package body txt_util
 -- Loading package txt_util
 
-} {} {}} C:/altera/15.0/lab3/full_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/full_adder.vhd
-Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Compiling entity full_adder
--- Compiling architecture full_adder_archi of full_adder
-
 } {} {}} C:/altera/15.0/lab3/mux4_1.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\altera\15.0\lab3\mux4_1.vhd}
 Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
 -- Loading package STANDARD
@@ -35,6 +26,37 @@ Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity mux4_1
 -- Compiling architecture mux4_1_archi of mux4_1
+
+} {} {}} C:/altera/15.0/lab3/alu_32.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity alu_32
+-- Compiling architecture alu_32_archi of alu_32
+** Warning: C:/altera/15.0/lab3/alu_32.vhd(50): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+
+
+} {} {}} C:/altera/15.0/lab3/alu_1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_1.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity alu_1
+-- Compiling architecture alu_1_archi of alu_1
+
+} {} {}} C:/altera/15.0/lab3/full_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/full_adder.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity full_adder
+-- Compiling architecture full_adder_archi of full_adder
 
 } {} {}} C:/altera/15.0/lab3/mypackage.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/mypackage.vhd
 Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
