@@ -15,7 +15,7 @@ USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 USE ieee.std_logic_unsigned.all;
 USE ieee.std_logic_textio.all;
---USE ieee.std_logic_textio;
+USE ieee.std_logic_textio;
 USE std.textio.all;
 
 USE WORK.txt_util.ALL;
@@ -114,16 +114,14 @@ BEGIN
            ASSERT (result=resultat_theorique )
             REPORT "ECHEC. Resultat = " & hstr(result)
              SEVERITY note;
-       
-           if (result=resultat_theorique) THEN
-                 write(ligne_texte2,Optype & " " 
+           write(ligne_texte2,Optype & " " 
                        &hstr(SrcA_stimuli)&" "&hstr(SrcB_stimuli)&" "&hstr(resultat_theorique)&" "
-	               &hstr(result) & " : SUCCES");
+	               &hstr(result) & " : ");
+           if (result=resultat_theorique) THEN
+                 ligne_texte2 := ligne_texte2 AND "SUCCES";
 	         Une_Erreur := '0';         
            else
-                 write(ligne_texte2,Optype & " " 
-                       &hstr(SrcA_stimuli)&" "&hstr(SrcB_stimuli)&" "&hstr(resultat_theorique)&" "
-	               &hstr(result) & " : ECHEC");
+                 ligne_texte2 := ligne_texte2 AND "ECHEC";
                  Une_Erreur := '1';           
            end if; 
            writeline(data_out, ligne_texte2);   

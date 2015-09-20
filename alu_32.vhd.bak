@@ -51,7 +51,7 @@ s_Cout_Cin(0)  <= ALUControl (2);
 s_less         <= (0 => s_set(ALU_SIZE),others=>'0');
 c_out          <= s_Cout_Cin(ALU_SIZE + 1);
 result         <= s_result;
-zero           <= not (or_reduce(s_result));
+zero           <= or_reduce(s_result);
 
 alu_32_generic : FOR i IN 0 TO ALU_SIZE GENERATE
 alu_1_x : alu_1 PORT MAP (SrcA(i),SrcB(i),s_Cout_Cin(i),s_less(i),ALUControl,s_Cout_Cin(i+1),s_result(i),s_set(i));

@@ -1,0 +1,3 @@
+vcom tb_alu.vhd
+vsim tb_alu
+Run 3000ns
