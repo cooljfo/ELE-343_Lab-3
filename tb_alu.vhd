@@ -22,26 +22,26 @@ USE WORK.txt_util.ALL;
 --USE WORK.mypackage.ALL;
 
 ENTITY tb_alu IS -- lentité du testbench est vide
-   GENERIC (ALU_SIZE: integer := 31);
+   GENERIC (ALU_SIZE: integer := 31);	--	déclaration de la constante
 END tb_alu;
 
 ARCHITECTURE tb_alu_arch OF tb_alu IS -- architecture composée de trois process
 COMPONENT alu_32                      --déclaration du composant utilisé
    GENERIC (ALU_SIZE: integer := 31);
 PORT (
-   SrcA, SrcB: IN STD_LOGIC_VECTOR (ALU_SIZE downto 0);
-   ALUControl : IN STD_LOGIC_VECTOR (3 downto 0);
-   c_out: OUT STD_LOGIC;
-   result: OUT STD_LOGIC_VECTOR (ALU_SIZE downto 0);
-   zero: out std_logic
+   SrcA, SrcB: IN STD_LOGIC_VECTOR (ALU_SIZE downto 0);		-- 	bus de 32 bits pour les entrées A et B
+   ALUControl : IN STD_LOGIC_VECTOR (3 downto 0);			-- 	selectionne l'operation de l'ALU
+   c_out: OUT STD_LOGIC;									-- 	retenue
+   result: OUT STD_LOGIC_VECTOR (ALU_SIZE downto 0);		--	résultat
+   zero: out std_logic										--
 ); END COMPONENT;
 
 --declarer les signaux ici
-SIGNAL SrcA,SrcB,result : std_logic_vector(ALU_SIZE downto 0);
-SIGNAL ALUControl 	: std_logic_vector(3 downto 0);
-SIGNAL c_out,zero,clk 	: std_logic;
+SIGNAL SrcA,SrcB,result : std_logic_vector(ALU_SIZE downto 0);	
+SIGNAL ALUControl 	: std_logic_vector(3 downto 0);				
+SIGNAL c_out,zero,clk 	: std_logic;							
 
-SIGNAL   OpType: STRING(1 to 3);
+SIGNAL   OpType: STRING(1 to 3);								
 
 
 -- déclaration de la constante contrôlant la période de l'horloge.

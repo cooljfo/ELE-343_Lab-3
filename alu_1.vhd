@@ -23,20 +23,20 @@ PORT (												--	Declaration des entrées et sorties
 ); END alu_1;
 
 ARCHITECTURE alu_1_archi OF alu_1 IS
-COMPONENT full_adder 
+COMPONENT full_adder 								--	Déclaration de l'additionneur 1 bit
 PORT (
    a, b, c_in: IN STD_LOGIC;
    sum, c_out: OUT STD_LOGIC
 ); 
 end COMPONENT;
 
-COMPONENT mux4_1
+COMPONENT mux4_1									--	Déclaration du multiplexeurs 4 entrées
 PORT ( i0, i1, i2, i3: IN std_logic;
     sel: IN std_logic_vector(1 downto 0) ;
     q : OUT std_logic);
 END COMPONENT;
 
-COMPONENT mux2_1
+COMPONENT mux2_1									--	Déclaration du multiplexeurs 2 entrées
 PORT ( i0, i1, sel : IN std_logic;
     q : OUT std_logic);
 end COMPONENT;
