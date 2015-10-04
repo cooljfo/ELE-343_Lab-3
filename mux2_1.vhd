@@ -14,5 +14,5 @@ END mux2_1;
 
 ARCHITECTURE mux2_1_archi OF mux2_1 IS				--	Description du multiplexeur mux2_1
 BEGIN												
-q<= i1 when(sel ='1') else i0;						
+q<= i1 when(sel ='1') else i0;						-- 	q = i[sel]
 END mux2_1_archi;

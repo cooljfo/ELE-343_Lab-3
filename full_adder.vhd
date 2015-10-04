@@ -18,6 +18,6 @@ END full_adder;
 
 ARCHITECTURE full_adder_archi OF full_adder IS 	--	Description de l'additionneur 1 bit full_adder
 BEGIN											
-  c_out <= (a AND b) or (c_in AND(a XOR b));
-  sum <= a XOR b XOR c_in;
+  c_out <= (a AND b) or (c_in AND(a XOR b));	--	c_out = (a ET b) OU (c_in ET (a OU EXLUSIF b))
+  sum <= a XOR b XOR c_in;						--	resultat de l'addition = a OU EXLUSIF b OU EXLUSIF c_in
 END full_adder_archi;
