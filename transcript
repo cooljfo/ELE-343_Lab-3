@@ -1,1 +1,37 @@
-# OpenFile tb_alu.vhd
+vcom -reportprogress 300 -work work C:/altera/15.0/lab3/tb_alu.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:17:30 on Oct 03,2015
+# vcom -reportprogress 300 -work work C:/altera/15.0/lab3/tb_alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package std_logic_textio
+# -- Loading package txt_util
+# -- Compiling entity tb_alu
+# -- Compiling architecture tb_alu_arch of tb_alu
+# ** Error: C:/altera/15.0/lab3/tb_alu.vhd(40): (vcom-1136) Unknown identifier "ALU_SIZE".
+# 
+# ** Error: C:/altera/15.0/lab3/tb_alu.vhd(40): Type error in range expression.
+# ** Error: C:/altera/15.0/lab3/tb_alu.vhd(86): (vcom-1136) Unknown identifier "ALU_SIZE".
+# 
+# ** Error: C:/altera/15.0/lab3/tb_alu.vhd(86): Type error in range expression.
+# ** Error: C:/altera/15.0/lab3/tb_alu.vhd(147): VHDL Compiler exiting
+# End time: 20:17:30 on Oct 03,2015, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work C:/altera/15.0/lab3/tb_alu.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:23:03 on Oct 03,2015
+# vcom -reportprogress 300 -work work C:/altera/15.0/lab3/tb_alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package std_logic_textio
+# -- Loading package txt_util
+# -- Compiling entity tb_alu
+# -- Compiling architecture tb_alu_arch of tb_alu
+# End time: 20:23:03 on Oct 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

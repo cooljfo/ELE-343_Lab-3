@@ -69,16 +69,4 @@ Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling entity alu_1
 -- Compiling architecture alu_1_archi of alu_1
 
-} {} {}} C:/altera/15.0/lab3/tb_alu.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/tb_alu.vhd
-Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package std_logic_textio
--- Loading package txt_util
--- Compiling entity tb_alu
--- Compiling architecture tb_alu_arch of tb_alu
-
 } {} {}}
