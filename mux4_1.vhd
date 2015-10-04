@@ -1,3 +1,13 @@
+--================ mux4_1.vhd =================================
+-- ELE-340 Conception des systèmes ordinés
+-- ETE 2007, Ecole de technologie supérieure
+-- Michael Deslauriers
+-- Christian Daigneault-St-Arnaud
+-- Jean-François Chenier
+-- =============================================================
+-- Description: mux4_1 realise un multiplexeur 4 entrées
+-- =============================================================
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
