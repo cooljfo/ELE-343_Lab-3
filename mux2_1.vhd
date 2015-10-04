@@ -1,3 +1,13 @@
+--================ mux2_1.vhd =================================
+-- ELE-340 Conception des systèmes ordinés
+-- ETE 2007, Ecole de technologie supérieure
+-- Michael Deslauriers
+-- Christian Daigneault-St-Arnaud
+-- Jean-François Chenier
+-- =============================================================
+-- Description: mux2_1 realise un multiplexeur 2 entrées
+-- =============================================================
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
@@ -7,13 +17,12 @@ USE ieee.std_logic_unsigned.all;
 				--et compiler avec vcom mypackage.vhdl en n'oubliant pas d'inserrer les librairies ieee, std...
 
 
-ENTITY mux2_1 IS 
-PORT ( i0, i1, sel : IN std_logic;
-        q : OUT std_logic);
+ENTITY mux2_1 IS 									--	Entité mux2_1
+PORT ( i0, i1, sel : IN std_logic;					--	i0,i1 signaux entrées, sel 
+        q : OUT std_logic);							--	signal de sortie
 END mux2_1;
 
-ARCHITECTURE mux2_1_archi OF mux2_1 IS
-BEGIN
-q<= i1 when(sel ='1') else i0;
-
+ARCHITECTURE mux2_1_archi OF mux2_1 IS				--	Description du multiplexeur mux2_1
+BEGIN												
+q<= i1 when(sel ='1') else i0;						-- 	q = i[sel]
 END mux2_1_archi;
