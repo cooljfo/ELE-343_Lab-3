@@ -48,8 +48,8 @@ signal s_result_and,s_result_or,s_result_add : std_logic;	-- signaux reliants le
 
 													--	connection des composants
 BEGIN
-U1 : mux2_1	PORT MAP (a,a_invert,ALUControl(3),s_a);	--	multiplexeur après l'entrée a controlant le signal s_a
-U2 : mux2_1 PORT MAP (b,b_invert,ALUControl(2),s_b);	--	multiplexeur après l'entrée b controlant le signal s_b
+U1 : mux2_1	PORT MAP (a,a_invert,ALUControl(ALUControl'HIGH),s_a);	--	multiplexeur après l'entrée a controlant le signal s_a
+U2 : mux2_1 PORT MAP (b,b_invert,ALUControl(ALUControl'HIGH-1),s_b);	--	multiplexeur après l'entrée b controlant le signal s_b
 														--	multiplexeur controlant la sortie result
 U3 : mux4_1 PORT MAP (s_result_and,s_result_or,s_result_add,less,ALUControl(1 downto 0),result);
 U4 : full_adder PORT MAP (s_a,s_b,c_in,s_result_add,c_out);	-- additionneur 1 bit qui additionne s_a et s_b

@@ -1,7 +1,44 @@
-vcom -reportprogress 300 -work work C:/altera/15.0/lab3/tb_alu.vhd
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/altera/15.0/lab3/lab3.mpf
+# Loading project lab3
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_1.vhd
 # Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 20:17:30 on Oct 03,2015
-# vcom -reportprogress 300 -work work C:/altera/15.0/lab3/tb_alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity alu_1
+# -- Compiling architecture alu_1_archi of alu_1
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# ** Warning: C:/altera/15.0/lab3/alu_32.vhd(51): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/mypackage.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package mypackage
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/tb_alu.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -11,19 +48,54 @@ vcom -reportprogress 300 -work work C:/altera/15.0/lab3/tb_alu.vhd
 # -- Loading package txt_util
 # -- Compiling entity tb_alu
 # -- Compiling architecture tb_alu_arch of tb_alu
-# ** Error: C:/altera/15.0/lab3/tb_alu.vhd(40): (vcom-1136) Unknown identifier "ALU_SIZE".
 # 
-# ** Error: C:/altera/15.0/lab3/tb_alu.vhd(40): Type error in range expression.
-# ** Error: C:/altera/15.0/lab3/tb_alu.vhd(86): (vcom-1136) Unknown identifier "ALU_SIZE".
 # 
-# ** Error: C:/altera/15.0/lab3/tb_alu.vhd(86): Type error in range expression.
-# ** Error: C:/altera/15.0/lab3/tb_alu.vhd(147): VHDL Compiler exiting
-# End time: 20:17:30 on Oct 03,2015, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-vcom -reportprogress 300 -work work C:/altera/15.0/lab3/tb_alu.vhd
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/txt_util.vhd
 # Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 20:23:03 on Oct 03,2015
-# vcom -reportprogress 300 -work work C:/altera/15.0/lab3/tb_alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package txt_util
+# -- Compiling package body txt_util
+# -- Loading package txt_util
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/mux2_1.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity mux2_1
+# -- Compiling architecture mux2_1_archi of mux2_1
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/mux4_1.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity mux4_1
+# -- Compiling architecture mux4_1_archi of mux4_1
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/full_adder.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity full_adder
+# -- Compiling architecture full_adder_archi of full_adder
+# 
+# 
+# 8 compiles, 0 failed with no errors.
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:33:28 on Oct 07,2015
+# vcom -reportprogress 300 tb_alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -33,5 +105,634 @@ vcom -reportprogress 300 -work work C:/altera/15.0/lab3/tb_alu.vhd
 # -- Loading package txt_util
 # -- Compiling entity tb_alu
 # -- Compiling architecture tb_alu_arch of tb_alu
-# End time: 20:23:03 on Oct 03,2015, Elapsed time: 0:00:00
+# End time: 13:33:29 on Oct 07,2015, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
+# vsim -gui C:\altera\15.0\lab3\lab3.mpf 
+# Start time: 13:33:29 on Oct 07,2015
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.txt_util(body)
+# Loading work.tb_alu(tb_alu_arch)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.alu_32(alu_32_archi)
+# Loading work.alu_1(alu_1_archi)
+# Loading work.mux2_1(mux2_1_archi)
+# Loading work.mux4_1(mux4_1_archi)
+# Loading work.full_adder(full_adder_archi)
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 40 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 60 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 80 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000100
+#    Time: 100 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 120 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000001
+#    Time: 140 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 160 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 000000FF
+#    Time: 180 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 200 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000001
+#    Time: 220 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 240 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 260 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000001
+#    Time: 280 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 300 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 12345678
+#    Time: 320 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 02244220
+#    Time: 340 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 360 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 380 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 97755779
+#    Time: 400 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 420 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 440 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: testbench pour full_adder_8.vhd termine avec succes
+#    Time: 440 ns  Iteration: 0  Instance: /tb_alu
+quit -sim
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/tb_alu.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package std_logic_textio
+# -- Loading package txt_util
+# -- Compiling entity tb_alu
+# -- Compiling architecture tb_alu_arch of tb_alu
+# 
+# 
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:49:10 on Oct 07,2015
+# vcom -reportprogress 300 tb_alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package std_logic_textio
+# -- Loading package txt_util
+# -- Compiling entity tb_alu
+# -- Compiling architecture tb_alu_arch of tb_alu
+# End time: 13:49:10 on Oct 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 13:49:10 on Oct 07,2015
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.txt_util(body)
+# Loading work.tb_alu(tb_alu_arch)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.alu_32(alu_32_archi)
+# Loading work.alu_1(alu_1_archi)
+# Loading work.mux2_1(mux2_1_archi)
+# Loading work.mux4_1(mux4_1_archi)
+# Loading work.full_adder(full_adder_archi)
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 40 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 60 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 80 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000100
+#    Time: 100 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 120 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000001
+#    Time: 140 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 160 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 000000FF
+#    Time: 180 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 200 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000001
+#    Time: 220 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 240 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 260 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000001
+#    Time: 280 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 300 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 12345678
+#    Time: 320 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 02244220
+#    Time: 340 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 360 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 380 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 97755779
+#    Time: 400 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 420 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 440 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: testbench pour full_adder_8.vhd termine avec succes
+#    Time: 440 ns  Iteration: 0  Instance: /tb_alu
+quit -sim
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_1.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity alu_1
+# -- Compiling architecture alu_1_archi of alu_1
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# ** Warning: C:/altera/15.0/lab3/alu_32.vhd(51): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/mypackage.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package mypackage
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/tb_alu.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package std_logic_textio
+# -- Loading package txt_util
+# -- Compiling entity tb_alu
+# -- Compiling architecture tb_alu_arch of tb_alu
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/txt_util.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package txt_util
+# -- Compiling package body txt_util
+# -- Loading package txt_util
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/mux2_1.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity mux2_1
+# -- Compiling architecture mux2_1_archi of mux2_1
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/mux4_1.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity mux4_1
+# -- Compiling architecture mux4_1_archi of mux4_1
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/full_adder.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity full_adder
+# -- Compiling architecture full_adder_archi of full_adder
+# 
+# 
+# 8 compiles, 0 failed with no errors.
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_1.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity alu_1
+# -- Compiling architecture alu_1_archi of alu_1
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(37): Aliased object must be a static name.
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(37): (vcom-1136) Unknown identifier "HIGH".
+# 
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(38): Aliased object must be a static name.
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(38): (vcom-1136) Unknown identifier "HIGH".
+# 
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(39): (vcom-1294) Declaration with designator "operation" already exists in this region.
+# ** =====> Prior declaration of "operation" is at C:/altera/15.0/lab3/alu_32.vhd(34).
+# 
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(54): (vcom-1136) Unknown identifier "b_invert".
+# 
+# ** Warning: C:/altera/15.0/lab3/alu_32.vhd(55): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(66): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(37): (vcom-1294) Declaration with designator "a_invert" already exists in this region.
+# ** =====> Prior declaration of "a_invert" is at C:/altera/15.0/lab3/alu_32.vhd(31).
+# 
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(39): (vcom-1294) Declaration with designator "operation" already exists in this region.
+# ** =====> Prior declaration of "operation" is at C:/altera/15.0/lab3/alu_32.vhd(34).
+# 
+# ** Warning: C:/altera/15.0/lab3/alu_32.vhd(55): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(66): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(39): (vcom-1294) Declaration with designator "operation" already exists in this region.
+# ** =====> Prior declaration of "operation" is at C:/altera/15.0/lab3/alu_32.vhd(34).
+# 
+# ** Warning: C:/altera/15.0/lab3/alu_32.vhd(55): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(66): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# ** Warning: C:/altera/15.0/lab3/alu_32.vhd(55): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# 
+# 
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:49:29 on Oct 07,2015
+# vcom -reportprogress 300 tb_alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package std_logic_textio
+# -- Loading package txt_util
+# -- Compiling entity tb_alu
+# -- Compiling architecture tb_alu_arch of tb_alu
+# End time: 14:49:30 on Oct 07,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:49:30 on Oct 07,2015
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.txt_util(body)
+# Loading work.tb_alu(tb_alu_arch)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.alu_32(alu_32_archi)
+# Loading work.alu_1(alu_1_archi)
+# Loading work.mux2_1(mux2_1_archi)
+# Loading work.mux4_1(mux4_1_archi)
+# Loading work.full_adder(full_adder_archi)
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 40 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 60 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 80 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000100
+#    Time: 100 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 120 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000001
+#    Time: 140 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 160 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 000000FF
+#    Time: 180 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 200 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000001
+#    Time: 220 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 240 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 260 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000001
+#    Time: 280 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 300 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 12345678
+#    Time: 320 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 02244220
+#    Time: 340 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 360 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 380 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 97755779
+#    Time: 400 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 420 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 440 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: testbench pour full_adder_8.vhd termine avec succes
+#    Time: 440 ns  Iteration: 0  Instance: /tb_alu
+quit -sim
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/tb_alu.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package std_logic_textio
+# -- Loading package txt_util
+# -- Compiling entity tb_alu
+# -- Compiling architecture tb_alu_arch of tb_alu
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# ** Warning: C:/altera/15.0/lab3/alu_32.vhd(55): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(58): Attribute name with designator "range" cannot be right operand of infix expression "/=".
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(58): Illegal use of range.
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(58): near "=>": expecting ')'
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# ** Warning: C:/altera/15.0/lab3/alu_32.vhd(55): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(58): Attribute name with designator "range" cannot be right operand of infix expression "/=".
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(58): Illegal use of range.
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(58): near "=>": expecting ')'
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# ** Warning: C:/altera/15.0/lab3/alu_32.vhd(55): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(58): Illegal concurrent statement.
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(71): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# ** Warning: C:/altera/15.0/lab3/alu_32.vhd(55): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(58): Illegal concurrent statement.
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(60): near "THEN": syntax error
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(71): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# ** Warning: C:/altera/15.0/lab3/alu_32.vhd(51): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(52): near "others": syntax error
+# ** Error: C:/altera/15.0/lab3/alu_32.vhd(64): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# 
+# 
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:08:39 on Oct 07,2015
+# vcom -reportprogress 300 tb_alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package std_logic_textio
+# -- Loading package txt_util
+# -- Compiling entity tb_alu
+# -- Compiling architecture tb_alu_arch of tb_alu
+# End time: 15:08:40 on Oct 07,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 15:08:40 on Oct 07,2015
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.txt_util(body)
+# Loading work.tb_alu(tb_alu_arch)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.alu_32(alu_32_archi)
+# Loading work.alu_1(alu_1_archi)
+# Loading work.mux2_1(mux2_1_archi)
+# Loading work.mux4_1(mux4_1_archi)
+# Loading work.full_adder(full_adder_archi)
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 40 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 60 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 80 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000100
+#    Time: 100 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 120 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000001
+#    Time: 140 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 160 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 000000FF
+#    Time: 180 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 200 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000001
+#    Time: 220 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 240 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 260 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000001
+#    Time: 280 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 300 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 12345678
+#    Time: 320 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 02244220
+#    Time: 340 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 360 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 380 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 97755779
+#    Time: 400 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = FFFFFFFF
+#    Time: 420 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Operation reussie. Resultat = 00000000
+#    Time: 440 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: testbench pour full_adder_8.vhd termine avec succes
+#    Time: 440 ns  Iteration: 0  Instance: /tb_alu
+quit -sim
+# vcom -work work -2002 -explicit -stats=none C:/altera/15.0/lab3/alu_32.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity alu_32
+# -- Compiling architecture alu_32_archi of alu_32
+# 
+# 
